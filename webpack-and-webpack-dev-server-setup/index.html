@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Getting started with webpack and babel</title>
+  </head>
+  <body>
+    <div id="page"></div>
+    <!-- Quick and dirty way to beat the insane webpack cache! -->
+    <script>
+      let script = document.createElement("script");
+      script.src = "build/bundle.js?" + Date.now();
+      script.charset = "utf-8";
+      document.body.appendChild(script);
+    </script>
+  </body>
+</html>
