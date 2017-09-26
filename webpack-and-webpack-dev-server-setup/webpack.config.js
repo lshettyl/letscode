@@ -1,14 +1,14 @@
 const path = require('path');
-const BUILD_DIR = path.resolve(__dirname, '/build');
-const APP_DIR = path.resolve(__dirname, 'src');
-const CONTENT_BASE = path.join(__dirname, "/");
+const BUILD_DIR = path.join(__dirname, '/build');
+const APP_DIR = path.join(__dirname, '/src');
+const CONTENT_BASE = path.join(__dirname, '/');
 
 module.exports = {
 
   entry: APP_DIR + '/App.js',
   output: {
     path: BUILD_DIR,
-    publicPath: BUILD_DIR,
+    publicPath: '/build',
     filename: 'bundle.js'
   },
   devServer: {
