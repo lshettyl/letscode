@@ -1,4 +1,4 @@
-##Getting started with webpack, webpack dever server + babel
+## Getting started with webpack, webpack dever server + babel
 
 Clone the repo, within the folder run `npm install` to install the required packages (listed under `devDependencies` and `dependencies` of `package.json`)
 
