@@ -2,5 +2,6 @@ node_modules
 node_modules/*
 build
 build/*
+public/bundle.js
 npm-debug.log*
 package-lock.json
