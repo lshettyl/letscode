@@ -8,5 +8,3 @@ Run `npm start` to:
 * continue to build/refresh the page as and when you make/save changes
 
 Please note that `webpack-dev-server` runs in memory by design. If you want a real bundle (to be seen in the file tree),  build through webpack.
-
-Here is the [link to the Demo](https://lshettyl.github.io/react/tfl-bus-status.html) for this app.
