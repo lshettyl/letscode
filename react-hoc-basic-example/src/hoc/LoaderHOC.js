@@ -28,14 +28,11 @@ const LoaderHOC = (propName) => (WrappedComponent) => {
       };
       // So, this.props.loadTime is now available in the WrappedComponent
 
-      return this.isEmpty(this.props[propName]) &&
-             <div class="loader-wrap"><div class="loader">Loading...</div></div> ||
-             <WrappedComponent {...this.props} {...newProps} />
-
+      return (
+        this.isEmpty(this.props[propName]) && <div className="loader-wrap"><div className="loader">Loading...</div></div> || <WrappedComponent {...this.props} {...newProps} />
+      );
     }
-
   }
-
 };
 
 export default LoaderHOC;

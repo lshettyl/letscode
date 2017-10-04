@@ -13,7 +13,7 @@ export default class Status extends Component {
     let entries = (
       (this.props.searchKeyword || "").trim() &&
       this.props.busStatusData.filter(entry => {
-        return entry.busNumber.indexOf(this.props.searchKeyword) !== -1
+        return entry.busNumber.indexOf(this.props.searchKeyword.toLowerCase()) !== -1
       }) ||
       this.props.busStatusData
     ).map(entry => {

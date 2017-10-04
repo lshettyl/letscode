@@ -39,7 +39,7 @@ export default class App extends Component {
       } = entry.lineStatuses[0].validityPeriods[0] || {};
 
       return {
-        busNumber: entry.id,
+        busNumber: entry.id.toLowerCase(),
         statusSeverityDescription,
         reason,
         categoryDescription,
